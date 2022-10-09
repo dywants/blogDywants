@@ -1,0 +1,82 @@
+@import "styles/settings/__settings";
+
+.wp-block-image{
+  img{
+    border:none;
+  }
+}
+
+.section{
+  margin-bottom: 0 !important;
+  padding-bottom: 0 ;
+}
+
+.wrapper{
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 50rem;
+  width: 100%;
+}
+
+.postMetadata {
+  text-align: left;
+  justify-content: stretch;
+}
+
+.bodyPost{
+  padding: 1.5rem 0;
+}
+
+.postFooter {
+  text-align: center;
+}
+
+.postModified {
+  color: $color-gray-500;
+  font-style: italic;
+  margin-bottom: 3rem;
+}
+
+.relatedPosts {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    font-size: 1.2em;
+    margin-bottom: 0.4em;
+  }
+  
+  ul {
+    list-style: none;
+  }
+}
+
+.cardRelatedPost {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+
+  .image{
+    -o-object-fit: cover;
+       object-fit: cover;
+-webkit-filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.1));
+        filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.1));
+border-radius: 10px;
+  }
+
+  h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #141414;
+    text-align:left;
+
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+

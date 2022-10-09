@@ -1,0 +1,62 @@
+@import "styles/settings/__settings";
+
+.description {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.wrapper{
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "content content content sidebar";
+
+
+  @media (min-width: 500px) {
+      .wrapper {
+        grid-template-areas:
+          "content"
+          "sidebar"
+      }
+  }
+
+  @media (min-width: 700px) {
+    .wrapper {
+      grid-template-areas:
+        "content content content sidebar"
+    }
+  }
+}
+
+.content {
+  grid-area: content;
+}
+
+.side {
+  grid-area: sidebar;
+}
+
+.posts {
+  list-style: none;
+  padding-left: 0;
+  margin: -1rem 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+
+  /*& > li {
+    margin: 4em 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  } */
+}
